@@ -25,6 +25,7 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.io
+from JCRC_Computing import Computing
 
 
 # 导入数据文件
