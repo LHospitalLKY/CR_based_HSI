@@ -20,7 +20,7 @@ Alg Author: Kaiyu Lei
 	-- end loop
 """
 
-# 导入的包
+## 导入的包
 import random
 import numpy as np
 import matplotlib.pyplot as plt
@@ -28,7 +28,7 @@ import scipy.io
 from JCRC_Computing import Computing
 
 
-# 导入数据文件
+## 导入数据文件
 def import_data():
 	'''
 	导入高光谱数据矩阵：将一个.mat文件导入python
@@ -54,7 +54,7 @@ def import_data():
 	return data_base
 
 
-# 记录每类样本点的位置
+## 记录每类样本点的位置
 def position(data_base):
 	'''
 	根据高光谱数据集信息得出每类样本点在map中的位置
@@ -77,7 +77,7 @@ def position(data_base):
 	return info_position_label
 
 
-# 按比例选择训练集、开发集和测试集
+## 按比例选择训练集、开发集和测试集
 def train_select(data_base, info_position_label, rate1 = 0.3, rate2 = 0.0):
 	'''
 	根据比例选择训练集，每个类别都选取一定比例的样本作为训练集，从训练集中选取一定比例的样本作为dev集，剩余的作为测试集
@@ -124,12 +124,12 @@ def train_select(data_base, info_position_label, rate1 = 0.3, rate2 = 0.0):
 
 	return data_set
 
-# 在原图中增加空间近邻信息
+## 在原图中增加空间近邻信息
 def nearest_neighbors(map):
 	'''
 	对原数据进行处理，加入空间信息
 	:param map: 原高光谱图片，三维矩阵，ndarray数据
-	:return: map_neighbor 铝箔处理之后的map，ndarray数据，大小同map相同
+	:return: map_neighbor 滤波处理之后的map，ndarray数据，大小同map相同
 	'''
 	[m, n, dim] = map.shape
 	map_neighbor = np.zeros([m, n, dim])
@@ -164,7 +164,7 @@ def nearest_neighbors(map):
 	return map_neighbor
 
 
-# 选择使用的JRC模型
+## 选择使用的JRC模型
 def model():
 	model = raw_input('请输入使用的方法：')
 
@@ -173,14 +173,40 @@ def model():
 
 	return model
 
-# TODO: 将四种算法划分为不同的模块，通过这些模块构建四种JRC模型
+## 实验模块
+# step1: 选取一个测试集
+# step2: 将训练集按类别编成字典，循环使用这些字典来计算残差向量
+#   step3: 比较这些残差项，得出测试集的类别
+#   step4: 计算分类准确率
 
-
-# Main函数
+### Main函数
 def main():
 	data_base = import_data()
+	data_base['sample'] = nearest_neighbors(data_base['sample'])
 	info_position_label = position(data_base)
 	data_set = train_select(data_base, info_position_label, 0.3, 0.2)
+
+	## 进行实验
+	for test_num in range(data_base['label'].min() + 1, data_base['label'].max()):
+
+		# 选择测试集
+		test = np.array(data_set['Test' + str(test_num)]).T
+
+		Residual = {}
+		file=open('Residual_of_' +str(test_num) + '.txt','w')
+		for num_train in range(data_base['label'].min() + 1, data_base['label'].max()):
+			train = np.array(data_set['Train' + str(num_train)]).T
+			# TODO: 参数选择
+			JRC = Computing(test, train, 0.1)
+
+			# print JRC.alpha
+			file.write(str(JRC.residual) + '\n')
+
+			Residual['Residual of Train' + str(num_train)] = JRC.residual
+
+		file.close()
+
+		print('over1')
 
 	print('Over')
 

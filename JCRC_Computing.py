@@ -18,7 +18,7 @@ class Computing:
 	lambd = .0
 	__Tikhonov = []
 	alpha = []
-	residual = 0
+	residual = []
 
 	# 初始化
 	def __init__(self, y, X, lambd = .0):
@@ -29,12 +29,34 @@ class Computing:
 		self.X = X
 		self.lambd = lambd
 
-		self.Tikhonov(y, X)
+		dim_x = X.shape
+		dim_y = y.shape
+
+		self.__Tikhonov = np.zeros([dim_x[1], dim_x[1]])
+		self.residual = np.zeros(dim_y[1])
+
+		## 计算Tiknonov矩阵
+		if len(dim_y) == 1:   # 如果y是一个向量
+			self.Tikhonov(self.y, self.X)
+		else:               # 如果y是一个矩阵
+			cache_Ti = self.__Tikhonov
+			for n in range(dim_y[1]):
+				# print y[:, n]     # Debug使用
+				cache_Ti = cache_Ti + self.Tikhonov(self.y[:, n], self.X)
+			self.__Tikhonov = cache_Ti
 
 		self.Alpha(self.y, self.X, self.__Tikhonov, self.lambd)
-		self.Residual(self.y, self.X, self.alpha)
 
-		self.print_Ti()
+		## 计算残差
+		if len(dim_y) == 1:
+			self.Residual(self.y, self.X, self.alpha)
+		else:
+			cache_Re = self.residual
+			for n in range(dim_y[1]):
+				cache_Re[n] = self.Residual(self.y[:, n], self.X, self.alpha[:, n])
+			self.residual = cache_Re
+
+		# self.print_Ti()
 		print 'Done!'
 
 
@@ -68,16 +90,21 @@ class Computing:
 		assert(X.shape[0] == y.shape[0])
 		assert(alpha.shape[0] == X.shape[1])
 		R_cache = np.dot(X, alpha) - y
-		self.residual = math.sqrt(np.dot(R_cache.T, R_cache))
+		self.residual = math.sqrt(np.dot(R_cache.T, R_cache))/math.sqrt(np.dot(alpha.T, alpha))   # 使用相对残差时加 '/math.sqrt(np.dot(alpha.T, alpha))'
+
+		return self.residual
 
 
 # 单元测试用例
 if __name__ == '__main__':
-	y = np.random.rand(20)
+	y = np.random.rand(20, 50)   #
 	X = np.random.rand(20, 40)
 
 	print y.shape
 	print X.shape
 
 	JRC = Computing(y, X, 0.1)
+
+	print JRC.alpha
+	print JRC.residual
 
