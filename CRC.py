@@ -1,13 +1,12 @@
 # !/usr/bin/python2
 # -*-coding: utf-8 -*-
 """
-算法来源：Joint Within-Class Collaborative Representation for Hyperspectral Image Classification
-Paper Author: Wei Li, Qian DU
+算法：Collaborative Representation
 Alg Author: Kaiyu Lei
 输入：高光谱数据 -- mat格式的三维矩阵
 输出：实验文件，包括：
-        分类精确率表格 -- 四种JCR算法对应lambda的分类精确率，
-        时间花费表格 -- 四种JCR算法对应lambda的时间花费
+        分类精确率表格 -- CRC算法对应lambda的分类精确率，
+        时间花费表格 -- CRC算法对应lambda的时间花费
         分类图 -- 每一种类别定义一种颜色，将高光谱中每个像素点都用这种对应的颜色画出来
 
 步骤：
@@ -25,7 +24,7 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.io
-from JCRC_Computing import Computing
+from CRC_computing import *
 
 
 ## 导入数据文件
@@ -187,6 +186,7 @@ def main():
 	data_set = train_select(data_base, info_position_label, 0.3, 0.2)
 
 	## 进行实验
+
 	for test_num in range(data_base['label'].min() + 1, data_base['label'].max()):
 
 		# 选择测试集
@@ -195,18 +195,36 @@ def main():
 		Residual = {}
 		file=open('Residual_of_' +str(test_num) + '.txt','w')
 		for num_train in range(data_base['label'].min() + 1, data_base['label'].max()):
+
 			train = np.array(data_set['Train' + str(num_train)]).T
+
 			# TODO: 参数选择
-			JRC = Computing(test, train, 0.1)
+			CRC = CRC_Computing(test, train, 0.1)
 
-			# print JRC.alpha
-			file.write(str(JRC.residual) + '\n')
+			# 保存残差数据
+			file.write(str(CRC.residual) + '\n')
 
-			Residual['Residual of Train' + str(num_train)] = JRC.residual
+			Residual['Residual of Train' + str(num_train)] = CRC.residual
+
+		#计算当前测试集下的分类精确度和测试点个数
+		Residual_array = np.array(Residual.values())
+		fuck = np.where(Residual_array == np.amin(Residual_array, axis = 0))[0]
+		fuck = (fuck == test_num - 1)
+		num_right = float(list(fuck).count(1))
+		accuracy = num_right/float(len(fuck))
+
+		# 保存准确率与测试样本点数量
+		file.write('Test' + str(test_num) + 'num = ' + str(len(fuck)) + '\n')
+		file.write('Test' + str(test_num) + 'accuracy = ' + str(accuracy) + '\n')
 
 		file.close()
 
-		print('over1')
+		# 打印数据，debug使用
+		print('Test' + str(test_num) + ' num = ' + str(len(fuck)))
+		print('Test' + str(test_num) + ' accuracy = ' + str(accuracy))
+
+		# print('over' + str(test_num))
+
 
 	print('Over')
 

@@ -1,0 +1,255 @@
+\documentclass[12pt,a4paper]{article}                                                                            
+\setlength{\parindent}{2em}          % 首行空两字
+\usepackage{fontspec}                % 设置字体
+\setmainfont{宋体}
+\usepackage{indentfirst}             % 首行缩进
+
+%%%%%%%%%% 数学符号公式 %%%%%%%%%%
+\usepackage{xeCJK}                   % 中英文混排
+\usepackage{amsmath}                 % AMS LaTeX宏包
+%\usepackage{amssymb}                 % 用来排版漂亮的数学公式
+%\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}                % 英文花体字体
+\usepackage{bm}                      % 数学公式中的黑斜体
+\usepackage{bbding,manfnt}           % 一些图标，如 \dbend
+\usepackage{lettrine}                % 首字下沉，命令\lettrine
+\def\attention{\lettrine[lines=2,lraise=0,nindent=0em]{\large\textdbend\hspace{1mm}}{}}
+%\usepackage{relsize}                 % 调整公式字体大小：\mathsmaller,\mathlarger
+%\usepackage{caption2}                % 浮动图形和表格标题样式
+
+%%%%%%%%%% 图形支持宏包 %%%%%%%%%%
+\usepackage{graphicx}                % 嵌入png图像
+\usepackage{color,xcolor}            % 支持彩色文本、底色、文本框等
+\usepackage{subfigure}
+\usepackage{epsfig}                 % 支持eps图像
+%\usepackage{picinpar}               % 图表和文字混排宏包
+%\usepackage[verbose]{wrapfig}       % 图表和文字混排宏包
+%\usepackage{eso-pic}                % 向文档的部分页加n副图形, 可实现水印效果
+%\usepackage{eepic}                  % 扩展的绘图支持
+%\usepackage{curves}                 % 绘制复杂曲线
+%\usepackage{texdraw}                % 增强的绘图工具
+%\usepackage{treedoc}                % 树形图绘制
+%\usepackage{pictex}                 % 可以画任意的图形
+%\usepackage{hyperref}
+
+%%%%%%%%%%% 列表 %%%%%%%%%%%%%
+\usepackage{enumerate}
+
+%%%%%%%%%% 正文 %%%%%%%%%%
+\begin{document}
+%%%%%%%%%% 定理类环境的定义 %%%%%%%%%%
+%% 必须在导入中文环境之后
+\newtheorem{example}{例}             % 整体编号
+\newtheorem{algorithm}{算法}
+\newtheorem{theorem}{定理}[section]  % 按 section 编号
+\newtheorem{definition}{定义}
+\newtheorem{axiom}{公理}
+\newtheorem{property}{性质}
+\newtheorem{proposition}{命题}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}
+\newtheorem{remark}{注解}
+\newtheorem{condition}{条件}
+\newtheorem{conclusion}{结论}
+\newtheorem{assumption}{假设}
+
+%%%%%%%%%% 一些重定义 %%%%%%%%%%
+\renewcommand{\contentsname}{目录}     % 将Contents改为目录
+\renewcommand{\abstractname}{摘要}     % 将Abstract改为摘要
+\renewcommand{\refname}{参考文献}      % 将References改为参考文献
+\renewcommand{\indexname}{索引}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\appendixname}{附录}
+\renewcommand{\proofname}{证明}
+\renewcommand{\algorithm}{算法}
+
+%%%%%%%%%% 论文标题、作者等 %%%%%%%%%%
+\title{基于p模的协同表达高光谱分类模型}
+\author{雷开宇，中国农业大学数学与应用数学系}
+%\date{2008年10月01日}                % 日期
+\date{2018年4月7日}
+\maketitle                            % 生成标题
+\tableofcontents                      % 插入目录
+\thispagestyle{empty}                 % 首页无页眉页脚
+
+\begin{abstract}
+\noindent TODO: 补充摘要，中文摘要300字左右，英文摘要250词左右
+\end{abstract}
+
+%\PencilRightUp % 一些可爱的图标，需要bbding宏包的支持
+公元1974年，ACM图灵奖授予了Standford大学教授\index{Donald E. Knuth} Donald E. Knuth （高德纳），
+表彰他在算法和程序语言设计等多方面杰出的成就。他的巨著 The Art of Computer Programming 令人震撼。
+另外，Knuth的突出贡献还包括\index{\TeX 系统} \TeX 系统，毫不夸张地评价，\TeX 给排版带来了一场革命。
+
+
+
+
+%%%%%%%%%% section：选题背景 %%%%%%%%%%
+\section{绪论}
+\indent   % 恢复缩进
+
+在信息时代....
+
+\subsection{研究背景及意义}
+高光谱图像(Hyperspectral Imagery, HSI)，是一种通过遥感技术获得的图像。高光谱影像收集及处理整个跨电磁波谱的信息，这些信息是由高光谱传感器(Hyperspectral image sensors)获取并整理。正如人眼一样，人眼能够看到物体，是因为物体反射的光，或者自身发出的光进入眼睛，大脑感受到信号，生成物体影响。与人眼不同的是，人眼只能分辨出可见光，而高光谱图像则可以延伸至红外、紫外，甚至整个电磁波谱上。\\
+
+HSI被广泛应用于农业、地质、天文、化学、食品工程和环境工程等领域，在军事上也有着重要的作用。研究者通过分析HSI来达到不同的目的。例如在地质勘测中，可以通过遥感获取的HSI图像来定位矿区的主要矿种和位置，在环境工程中，通过对有毒气体泄漏区域的空气进行HSI分析，可以确定毒气成分和扩散趋势。
+
+HSI分析中，分类问题是研究的一个热门。在现实中，人们往往能通过专业领域知识来确定出HSI中某个区域的物质构成，以及少量的分布信息。例如在一个利用HSI进行农产品种植结构分析的例子中，人们往往可以通过各地农业部门上报的信息，来确定HSI中存在几种农作物，并且可以根据采样调查知道某个区域农作物的具体分布情况。如何通过这些有限的信息来对整个HSI中的物质进行分类，这是一个值得研究的问题。
+
+机器学习在HSI分类中有着广泛的应用。当人们获取到HSI时，由于人类自身生理结构和极限的限制，直接对HSI进行分析无疑需要大量的人力物力，成本过于高昂。同时，人工方式分类HSI还会受到人类主观心理的影响，例如对图像中特定区域，不同的人可能认为该区域的成分分布不同。随之HSI传感器分辨率越来越高，通过人力直接进行分类变得不再可行，因此使用计算机来对HSI进行分析变得越来越重要。在分类问题中，机器学习能够自主地通过已知信息来学习，因此十分适合HSI分类问题。
+
+从样本数量来说，机器学习分为三类：监督学习、半监督学习和无监督学习。监督学习是将已知标签的样本作为训练集，对样本特征进行学习。无监督学习是指作为训练集的样本没有标签信息，典型的无监督学习有聚类问题。半监督学习是指训练集中既有有标签的样本点，又有无标签的样本点。在本文的假定下，HSI分类问题是一个半监督学习问题，通过数量较少的有标签样本点和部分无标签的样本点构造算法，实现对HSI图像的自动分类。
+
+\subsection{研究现状}
+半监督学习是利用....
+
+\subsection{本文主要工作}
+本文主要针对HSI问题的，对协同表达算法进行了改进，使之在HSI分类中表现更好。主要工作有以下几点：
+\begin{enumerate}[(1)]
+\item 在CR模型的基础上，引入了p模技术，把正则项的中的范数改为p范数，取得更好的稀疏性。
+\item 在JCR模型的基础上，引入了p模技术，以得到更好的稀疏性和精确度。
+\item 将本文改进后的p-CRC模型、p-JRC模型分别在Indian、Pavia、Salinas等数据集上，与SRC、CRC、JCR和SVM方法进行比较，分析实验结果。
+\end{enumerate}
+
+\subsection{本文组织结构}
+
+
+
+
+
+
+
+%%%%%%%%%%% section：方案论证 %%%%%%%%%%
+\section{方案论证}
+这部分主要介绍协同表达模型特点，以及在HSI领域的应用情况
+
+
+\begin{theorem}[L\'{e}vy\index{L\'{e}vy 定理}]
+令 $F(x),\varphi(t)$ 分别为随机变量 $X$ 的分布函数和特征函数。
+假定 $F(x)$ 在 $a+h$ 和 $a-h (h>0)$ 处连续，则有
+\begin{align}
+ \label{Levy theorem}  % 方程的标记可以是专有名词
+F(a+h)-F(a-h)&=\lim_{T\rightarrow\infty}\frac{1}{\pi}\int^{T}_{-T}\frac{\sin ht}{t} 
+e^{-ita}\varphi(t)dt
+\end{align}
+\end{theorem}
+\begin{proof}
+  从略。感兴趣的读者可以参考……。
+\end{proof}
+
+
+\begin{corollary}
+密度函数和特征函数之间有如下的关系。
+\begin{align}
+ \label{DensityCharacteristic}   % 自定义的标记
+  f(x)&=\frac{1}{2\pi}\int^{+\infty}_{-\infty} e^{-itx}\varphi(t)dt
+\end{align}
+\end{corollary}
+
+\begin{proof}
+由公式 (\ref{Levy theorem}) 和 Lebesgue 定理，我们有
+\begin{align*}
+ \frac{F(x+\Delta x)-F(x)}{\Delta x}&=\frac{1}{2\pi}\int^{+\infty}_{-\infty}
+ \frac{\sin(t\Delta x/2)}{t\Delta x/2} e^{-it(x+\Delta x/2)}\varphi(t) dt\\
+  f(x)&=\frac{1}{2\pi}\int^{+\infty}_{-\infty}\lim_{\Delta x\rightarrow 0}
+ \frac{\sin(t\Delta x/2)}{t\Delta x/2} e^{-it(x+\Delta x/2)}\varphi(t) dt\\
+  &=\frac{1}{2\pi}\int^{+\infty}_{-\infty} e^{-itx}\varphi(t)dt\qedhere
+\end{align*}
+\end{proof}
+
+我们知道特征函数的定义是
+
+\begin{align}
+ \label{section1:characteristic}   % 标记中注明了章节号
+ \varphi(t)&= E(e^{itX})=\int^{+\infty}_{-\infty} e^{itx} f(x)dx
+\end{align}
+
+L\'{e}vy 定理在分布函数和特征函数之间搭建了一座桥梁。
+对比 (\ref{DensityCharacteristic}) 和 (\ref{section1:characteristic}) 可见，
+密度函数和特征函数之间的关系非常巧妙。
+
+                                                                                                                 
+\attention 在\TeX 环境里，数学公式的表达是很自然的，绝大多数命令就是英文的数学专有名词或它们的缩写，
+如果你以前读过英文的数学文献，记忆这些命令是不难的。如果你没读过，正好通过记忆这些命令来了解术语。
+
+
+手头有个命令快速寻查表是很方便的，我用的是 Hypertext Help with \LaTeX，网上可以搜到，是免费的。
+
+\index{贝叶斯方法}贝叶斯方法\cite{Gelman} 主要用于小样本数据分析，它利用参数先验分布和
+后验分布之差异进行统计推断，其一般步骤是：
+
+\begin{enumerate}
+ \item 构建概率模型，包括参数的先验分布。
+ \item 给定观察数据，计算参数的后验分布。
+ \item 分析模型的效果，如有必要，回到第一步。
+\end{enumerate}
+
+\begin{example}
+下面，我们给一个表格的例子，一个图形的例子。
+
+\begin{center}
+\begin{table}[!ht]     % 强制在原位显示表格
+\centering
+\caption{二维随机向量$(X,Y)$的边缘分布}
+\begin{tabular}{l|ccccc|c}
+  $_X$\hspace{3mm} $^Y$&$y_1$&$y_2$&$\cdots$&$y_j$&$\cdots$\\
+\hline
+$x_1$   &$p_{11}$&$p_{12}$&$\cdots$&$p_{1j}$&$\cdots$&$p_{1\cdot}$\\
+$x_2$   &$p_{21}$&$p_{22}$&$\cdots$&$p_{2j}$&$\cdots$&$p_{2\cdot}$\\
+$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$\\
+$x_i$   &$p_{i1}$&$p_{i2}$&$\cdots$&$p_{ij}$&$\cdots$&$p_{i\cdot}$\\
+$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$\\
+\hline
+   &$p_{\cdot 1}$&$p_{\cdot 2}$&$\cdots$&$p_{\cdot j}$&$\cdots$&1
+\label{marginal distribution}
+\end{tabular}
+\end{table}
+\end{center}
+
+在表\ref{marginal distribution} 中，$p_{\cdot j}=\sum\limits_i p_{ij}$，
+类似地，$ p_{i\cdot}=\sum\limits_j p_{ij}$。
+\end{example}
+
+% 插入一个图片
+
+
+
+
+
+%%%%%%%%%%% section：过程论述 %%%%%%%%%%
+\section{过程论述}
+这个部分包括模型改进介绍，包括已有模型、改进后的模型、改进后的算法，改进后的实现
+
+
+
+
+%%%%%%%%%%% section：实验与分析 %%%%%%%%%%
+\section{实验与分析}
+这个\TeX 模板只是为了提供一个学习\TeX 的参考，各节的内容并没有关联性。欢迎读者使用并改进该模板，
+并祝学习\TeX 愉快！
+
+Knuth大师最初设计\TeX 的时候并没有想到中文化，\TeX 排版系统的中文化始终令初学者望而却步、云山雾罩。
+类UNIX系统下的teTeX和Windows系统下的MikTeX，都是\TeX 知名的发行版。然而，teTeX已经停止研发五年之久，
+基于MikTeX的中文发行版CTeX 虽然如火如荼，但依然挡不住\TeX Live 一统江湖的大趋势。
+
+虽然\TeX Live 还未入住FreeBSD的ports tree，但teTeX的远去，
+令FreeBSD之下的很多ports不得不面临改换门庭的窘境。例如，auctex、latex-cjk等等。
+
+
+\TeX 的中文化可以有多种途径，xelatex 是其中最简单的（不见得是最美观的）。
+在\TeX Live 2011 之下，不需要有任何更多的设置，甚至不用考虑中英文混排，
+xelatex能满足绝大多数中文化要求。这对于初学者来说，无疑是一个福音。
+
+
+%%%%%%%%%% 参考文献 %%%%%%%%%%
+\begin{thebibliography}{}
+\bibitem[Gelman et al., 2004]{Gelman} Gelman, A., Carlin, J. B., Stern, H. S. \& Rubin, D. B.
+ (2004) Bayesian Data Analysis (Second Edition). \newblock Chapman \& Hall/CRC.
+\end{thebibliography}
+\clearpage
+\end{document}
+%%%%%%%%%% 结束 %%%%%%%%%%

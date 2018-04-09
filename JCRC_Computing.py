@@ -13,6 +13,7 @@ class Computing:
 	alpha: 线性表达系数，维度为n
 	residual: 待测样本与字典集合的残差
 	'''
+	n = 1
 	y = []
 	X = []
 	lambd = .0
@@ -21,9 +22,7 @@ class Computing:
 	residual = []
 
 	# 初始化
-	def __init__(self, y, X, lambd = .0):
-
-		assert(X.shape[0] == y.shape[0])
+	def __init__(self, y, X, lambd):
 
 		self.y = y
 		self.X = X
@@ -33,7 +32,7 @@ class Computing:
 		dim_y = y.shape
 
 		self.__Tikhonov = np.zeros([dim_x[1], dim_x[1]])
-		self.residual = np.zeros(dim_y[1])
+		# self.residual = np.zeros(dim_y[1])
 
 		## 计算Tiknonov矩阵
 		if len(dim_y) == 1:   # 如果y是一个向量
@@ -43,7 +42,7 @@ class Computing:
 			for n in range(dim_y[1]):
 				# print y[:, n]     # Debug使用
 				cache_Ti = cache_Ti + self.Tikhonov(self.y[:, n], self.X)
-			self.__Tikhonov = cache_Ti
+			self.__Tikhonov = (1./dim_y[1]) * cache_Ti
 
 		self.Alpha(self.y, self.X, self.__Tikhonov, self.lambd)
 
@@ -57,7 +56,7 @@ class Computing:
 			self.residual = cache_Re
 
 		# self.print_Ti()
-		print 'Done!'
+		# print 'Done!'
 
 
 	def print_Ti(self):
@@ -80,17 +79,18 @@ class Computing:
 
 
 	def Alpha(self, y, X, Tikhonov, lambd):
-		Q = np.linalg.inv((np.dot(X.T, X) + lambd*np.dot(Tikhonov.T, Tikhonov)))
-		U = np.dot(Q, X.T)
-		self.alpha = np.dot(U, y)
-		assert(self.alpha.shape[0] == X.shape[1])
+			Q = np.linalg.inv((np.dot(X.T, X) + lambd*np.dot(Tikhonov.T, Tikhonov)))
+			U = np.dot(Q, X.T)
+			self.alpha = np.dot(U, y)
+			assert(self.alpha.shape[0] == X.shape[1])
+
 
 
 	def Residual(self, y, X, alpha):
 		assert(X.shape[0] == y.shape[0])
 		assert(alpha.shape[0] == X.shape[1])
-		R_cache = np.dot(X, alpha) - y
-		self.residual = math.sqrt(np.dot(R_cache.T, R_cache))/math.sqrt(np.dot(alpha.T, alpha))   # 使用相对残差时加 '/math.sqrt(np.dot(alpha.T, alpha))'
+		R_cache = y - np.dot(X, alpha)
+		self.residual = math.sqrt(np.dot(R_cache.T, R_cache))/math.sqrt(np.dot(alpha.T, alpha)) # 使用相对残差时加 '/math.sqrt(np.dot(alpha.T, alpha))'
 
 		return self.residual
 
