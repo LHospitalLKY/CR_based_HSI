@@ -1,7 +1,7 @@
 \documentclass[12pt,a4paper]{article}                                                                            
 \setlength{\parindent}{2em}          % 首行空两字
-\usepackage{fontspec}                % 设置字体
-\setmainfont{宋体}
+%\usepackage{fontspec}                % 设置字体
+%\setmainfont{宋体}
 \usepackage{indentfirst}             % 首行缩进
 
 %%%%%%%%%% 数学符号公式 %%%%%%%%%%
@@ -445,7 +445,7 @@ W = {w_{1}, ... , w_{d}}
 \begin{enumerate}[(1)]
 \item 对样本点的线性表达应该尽可能接近$y$，使得$||y - D\alpha||_{2}$尽可能小；
 \item 线性表达系数中，非零项应该集中在与测试点处于同一子空间中的那些点。
-\end{enumer}
+\end{enumerate}
 
 事实证明，线性表达系数$\alpha$越稀疏，$D\alpha$就越接近$y$，即残差$||y - D\alpha||^{2}$越小。下表是在不同情况下对残差的计算，很明显，$l_{1}$范数下的残差要小于$l_{2}$。但若表达系数过于稀疏，则可能不足以准确地表达出样本所处的子空间，因此，我们希望的是得到一个较为稀疏的解。$l_{1}$得到的解过于稀疏，因此我们需要用$p \in (1, 2)$来取得适当的稀疏性。
 
@@ -454,7 +454,20 @@ W = {w_{1}, ... , w_{d}}
 \label{eq23}
 arg \min_{w} ||y - D\alpha||_{2}^{2} + \lambda ||\alpha||_{p}
 \end{equation}
-解决优化问题\eqref{eq23}
+解决优化问题\eqref{eq23}，需要通过迭代来计算，具体步骤如下：
+\begin{algorithm}[H] 
+	\caption{$基于l_{p}范数的协同表达模型的迭代算法$：pCRC}  
+	\label{alg:pCRC}  
+	\begin{algorithmic}
+		\STATE 记$1-$向量为$l，$初始化向量$\beta_{0} = l$，$\beta_{0}$的维度与$\alpha$相同
+		\STATE 1. 计算$\alpha = (D^{T}D + \lambda \beta^{t}\beta)^{-1}D^{T} \cdot y$；   
+		\STATE 2. 计算$\beta_{1} = p(|\alpha| + l)^{p - 2}$；
+		\STATE 3. 计算$error = ||\beta_{0} - \beta_{1}||$，并令$\beta_{0} = \beta_{1}$；
+		\STATE 4. 重复上(1) ～ (3)，直到$error$小于某个值，或迭代次数到达最大值；
+	\end{algorithmic}  
+\end{algorithm}  
+
+\subsubsection{pCRC-2}
 
 %%%%%%%%%%% section：实验与分析 %%%%%%%%%%
 \section{实验与分析}
