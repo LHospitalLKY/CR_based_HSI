@@ -4,6 +4,11 @@
 %\setmainfont{宋体}
 \usepackage{indentfirst}             % 首行缩进
 
+%%%%%%%%%% 格式设置 %%%%%%%%%%%%
+\usepackage{geometry}
+\geometry{a4paper,left=3cm,right=2.5cm,top=3cm,bottom=2.5cm}
+\setlength{\baselineskip}{18pt}
+
 %%%%%%%%%% 数学符号公式 %%%%%%%%%%
 \usepackage{xeCJK}                   % 中英文混排
 \usepackage{amsmath}                 % AMS LaTeX宏包
@@ -164,9 +169,9 @@ arg\min_{\alpha} \qquad ||y - D_{l}\alpha||_{2}^{2} + \lambda||\alpha||_{0}
 \end{equation}
 其中，$\alpha$是线性表达系数，$\lambda||\alpha||_{0}$称为稀疏项，$\lambda$称为稀疏系数。稀疏项使用$l_0$模，该模的定义为：
 \begin{equation}\label{eq4}
-||x|| = n, \qquad n为x中非零元素的个数
+||x|| = n
 \end{equation}
-
+其中，$n$为$x$中非零元素的个数。
 根据$l_{0}$模的定义，由于稀疏项$\lambda||\alpha||_{0}$的存在，整个优化问题\eqref{eq3}是一个非凸规划。在优化问题中，非凸规划的求解是十分困难的，甚至是无法求解的。值得庆幸的是，人们通过研究发现，在很多情况下，可以通过$l_{1}$模来凸近似$l_{0}$范数，因此稀疏表达的优化问题就变成了：
 \begin{equation}
 \label{eq5}
@@ -175,9 +180,9 @@ arg\min_{\alpha} \quad ||y - D_{l}\alpha||_{2}^{2} + \lambda||\alpha||_{1}
 其中：
 \begin{equation}
 \label{eq6}
-||x||_{1} = \sum_{i = 1}^{n} |x_{i}|, \qquad n为x的维度
+||x||_{1} = \sum_{i = 1}^{n} |x_{i}|
 \end{equation}
-
+其中$n$为$x$的维度
 令$r_{l} = ||y - D_{l}\hat{\alpha}||_{2}$，其中$\hat{\alpha}$为优化问题\eqref{eq5}的解，则测试样本$y$类别判断函数为：
 \begin{equation*}
 label(y) = identity(arg\min_{l}\{r_{l}\})
