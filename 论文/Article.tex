@@ -116,6 +116,8 @@ HSI分析中，分类问题是研究的一个热门。在现实中，人们往�
 \subsubsection{HSI图像特征}
 半监督学习是利用....
 \subsubsection{常见的HSI分类问题的解决方案}
+
+
 \begin{enumerate}
 \item 稀疏表达
 \item 协同表达
@@ -429,6 +431,8 @@ W = {w_{1}, ... , w_{d}}
 
 \subsection{基于$l_p$范数的协同表达分类模型(pCRC)}
 
+\subsubsection{空间滤波与数据预处理}
+
 \subsubsection{pCRC-1}
 正如前文所述，相比$l_{2}$范数，$l_{p}$范数能够增加模型的稀疏性，得到更好的学习表现，同时减少内存存储压力；相比$l_{1}$范数，$l_{p}$范数一定程度上又能加速训练速度，因此，我们不妨考虑使用$l_{p}$范数作为协同表达的正则项。
 
@@ -469,22 +473,14 @@ arg \min_{w} ||y - D\alpha||_{2}^{2} + \lambda ||\alpha||_{p}
 
 \subsubsection{pCRC-2}
 
+
+
 %%%%%%%%%%% section：实验与分析 %%%%%%%%%%
 \section{实验与分析}
-这个\TeX 模板只是为了提供一个学习\TeX 的参考，各节的内容并没有关联性。欢迎读者使用并改进该模板，
-并祝学习\TeX 愉快！
+为了验证上述模型能够取得更好的表现，我们使用了Indian Pines, University of Pavia与Salinas Scene三组数据集来进行实验，分别对比$PCA-CRC$, $PCA-JCRC$, $PCA-pCRC1$, $PCA-pCRC2$, $LDA-CRC$, $LDA-JCRC$, $LDA-pCRC1$, $LDA-pCRC2$在这三个数据集上的分类精确度，以此判断算法的优劣。
 
-Knuth大师最初设计\TeX 的时候并没有想到中文化，\TeX 排版系统的中文化始终令初学者望而却步、云山雾罩。
-类UNIX系统下的teTeX和Windows系统下的MikTeX，都是\TeX 知名的发行版。然而，teTeX已经停止研发五年之久，
-基于MikTeX的中文发行版CTeX 虽然如火如荼，但依然挡不住\TeX Live 一统江湖的大趋势。
-
-虽然\TeX Live 还未入住FreeBSD的ports tree，但teTeX的远去，
-令FreeBSD之下的很多ports不得不面临改换门庭的窘境。例如，auctex、latex-cjk等等。
-
-
-\TeX 的中文化可以有多种途径，xelatex 是其中最简单的（不见得是最美观的）。
-在\TeX Live 2011 之下，不需要有任何更多的设置，甚至不用考虑中英文混排，
-xelatex能满足绝大多数中文化要求。这对于初学者来说，无疑是一个福音。
+\subsection{数据预处理}
+一般来说，高光谱数据集都需要经过
 
 
 %%%%%%%%%% 参考文献 %%%%%%%%%%
