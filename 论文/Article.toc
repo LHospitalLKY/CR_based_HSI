@@ -1,8 +1,8 @@
 \contentsline {section}{\numberline {1}绪论}{2}
 \contentsline {subsection}{\numberline {1.1}研究背景及意义}{2}
-\contentsline {subsection}{\numberline {1.2}研究现状}{2}
-\contentsline {subsubsection}{\numberline {1.2.1}HSI图像特征}{2}
-\contentsline {subsubsection}{\numberline {1.2.2}常见的HSI分类问题的解决方案}{2}
+\contentsline {subsection}{\numberline {1.2}研究现状}{3}
+\contentsline {subsubsection}{\numberline {1.2.1}HSI图像特征}{3}
+\contentsline {subsubsection}{\numberline {1.2.2}常见的HSI分类问题的解决方案}{3}
 \contentsline {subsection}{\numberline {1.3}本文主要工作}{3}
 \contentsline {subsection}{\numberline {1.4}本文组织结构}{3}
 \contentsline {section}{\numberline {2}相关知识与理论基础}{3}
@@ -10,13 +10,17 @@
 \contentsline {subsection}{\numberline {2.2}协同表达分类模型}{5}
 \contentsline {section}{\numberline {3}基于$l_{p}$范数的协同表达HSI分类模型}{6}
 \contentsline {subsection}{\numberline {3.1}岭回归与$l_{p}$范数}{6}
-\contentsline {subsection}{\numberline {3.2}Tikhonov矩阵}{7}
+\contentsline {subsection}{\numberline {3.2}Tikhonov回归}{7}
 \contentsline {subsection}{\numberline {3.3}降维方法}{7}
-\contentsline {subsubsection}{\numberline {3.3.1}主成分分析PCA}{7}
+\contentsline {subsubsection}{\numberline {3.3.1}主成分分析PCA}{8}
 \contentsline {subsubsection}{\numberline {3.3.2}线性判别分析LDA}{9}
-\contentsline {subsection}{\numberline {3.4}基于$l_p$范数的协同表达分类模型(pCRC)}{9}
-\contentsline {subsubsection}{\numberline {3.4.1}空间滤波与数据预处理}{9}
-\contentsline {subsubsection}{\numberline {3.4.2}pCRC-1}{9}
+\contentsline {subsection}{\numberline {3.4}基于$l_p$范数的协同表达分类模型(pCRC)}{10}
+\contentsline {subsubsection}{\numberline {3.4.1}空间滤波与数据预处理}{10}
+\contentsline {subsubsection}{\numberline {3.4.2}pCRC-1}{10}
 \contentsline {subsubsection}{\numberline {3.4.3}pCRC-2}{11}
 \contentsline {section}{\numberline {4}实验与分析}{11}
-\contentsline {subsection}{\numberline {4.1}数据预处理}{11}
+\contentsline {subsection}{\numberline {4.1}数据集介绍}{12}
+\contentsline {subsubsection}{\numberline {4.1.1}Indian Pines数据集}{12}
+\contentsline {subsubsection}{\numberline {4.1.2}University of Pavia数据集}{12}
+\contentsline {subsubsection}{\numberline {4.1.3}Salinas Scene数据集}{12}
+\contentsline {subsection}{\numberline {4.2}数据预处理}{12}

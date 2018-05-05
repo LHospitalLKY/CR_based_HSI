@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.5.2)  4 MAY 2018 20:58
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.5.2)  5 MAY 2018 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1303,49 +1303,28 @@ LaTeX Warning: Reference `14' on page 6 undefined on input line 297.
 File: lp_norm.png Graphic file (type bmp)
 <lp_norm.png>
 [6] [7]
-Overfull \hbox (0.54248pt too wide) in paragraph at lines 372--373
+Overfull \hbox (0.54248pt too wide) in paragraph at lines 384--385
 []\TU/FandolSong-Regular(0)/m/n/12 优 化 问 题[]可 以 直 接 推 广 到 高 维 空 间，|  且 易 知 $\OM
 L/cmm/m/it/12 S \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 XX[]$\TU/FandolSong-Regular(
 0)/m/n/12 。|  设 $\OML/cmm/m/it/12 X \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 ; x[] 
 \OMS/cmsy/m/n/12 2
  []
 
-[8]
+[8] [9]
 File: l2_vs_l1.png Graphic file (type bmp)
 <l2_vs_l1.png>
- [9]
-
-LaTeX Warning: Citation `zhang L' on page 10 undefined on input line 451.
-
-Missing character: There is no 基 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 于 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 范 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 数 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 的 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 协 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 同 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 表 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 达 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 模 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 型 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 的 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 迭 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 代 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 算 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 法 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ， in font [lmroman12-regular]:mapping=tex-text;!
-[10] [11] (./Article.aux)
+ [10] [11] [12] (./Article.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 20594 strings out of 492998
- 413234 string characters out of 6136606
- 476307 words of memory out of 5000000
- 24389 multiletter control sequences out of 15000+600000
+ 20595 strings out of 492998
+ 413245 string characters out of 6136606
+ 477326 words of memory out of 5000000
+ 24390 multiletter control sequences out of 15000+600000
  546867 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  46i,15n,59p,10464b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Article.pdf (11 pages).
+Output written on Article.pdf (12 pages).
