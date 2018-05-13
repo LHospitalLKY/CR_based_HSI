@@ -42,7 +42,7 @@ class pCRC_Computing:
 		else:
 			cache_Re = self.residual
 			for n in range(dim_y[1]):
-				cache_Re[n] = self.Residual(self.y[:, n], self.X, self.alpha[:, n])
+				cache_Re[n] = (self.Residual(self.y[:, n], self.X, self.alpha[:, n]))
 			self.residual = cache_Re
 
 		# self.print_Ti()
@@ -73,6 +73,7 @@ class pCRC_Computing:
 
 
 	def Residual(self, y, X, alpha):
+		# 返回的是一个narray类型的数据
 		assert(X.shape[0] == y.shape[0])
 		assert(alpha.shape[0] == X.shape[1])
 		R_cache = np.dot(X, alpha) - y
@@ -86,10 +87,10 @@ if __name__ == '__main__':
 	y = np.random.rand(20, 1)   #
 	X = np.random.rand(20, 40)
 
-	print y.shape
-	print X.shape
+	print(y.shape)
+	print(X.shape)
 
 	pCRC = pCRC_Computing(y, X, 0.1)
 
-	print pCRC.alpha
-	print pCRC.residual
+	print(pCRC.alpha)
+	print(pCRC.residual)

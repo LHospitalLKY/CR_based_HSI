@@ -531,6 +531,7 @@ $\Gamma$的定义同上。
 \section{实验与分析}
 为了验证上述模型能够取得更好的表现，我们使用了Indian Pines, University of Pavia与Salinas Scene三组数据集来进行实验，分别对比$PCA-CRC$, $PCA-JCRC$, $PCA-pCRC1$, $PCA-pCRC2$, $LDA-CRC$, $LDA-JCRC$, $LDA-pCRC1$, $LDA-pCRC2$在这三个数据集上的分类精确度，以此判断算法的优劣。
 
+科学合理地设置实验，是机器学习领域研究中十分重要的部分。一个好的数值实验应该能够体现算法的性质，对算法的优劣进行一个评判。在本文中，我们设置了一系列对照实验，来达到以上目的。本文的所有实验均在Python3.6环境下进行，计算机CPU型号i5-4210U，且所有的数据在实验前都要进行数据预处理.
 \subsection{数据集介绍}
 我们选择了三个训练集来进行实验，这三个数据集分别为Indian Pines, University of Pavia与Salinas Scene。
 \subsubsection{Indian Pines数据集}
@@ -694,7 +695,39 @@ x_{i, j} & = g(R_{3 \times 3}, G_{3 \times 3}) \\
 
 另外，当$x_{i,j}$是图像的边界点时，我们需要先对该点附近的近邻点进行镜像反转，然后再进行卷积运算。通常我们常用$3 \times 3$和$5 \times 5$作为选取近邻点的窗口。
 
-\subsection{数值实验}
+\subsection{参数选择}
+在本文的模型中，需要进行选择的参数有两个，一个是正则项系数$\lambda$，另一个是范数$l_{p}$。这两个参数对算法表现均由一定的影响。
+
+\begin{table}[h]
+\centering
+\caption{Indian Pines数据集在不同p下的分类表现}\label{tab:Ind_diff_p}
+\begin{tabu} to 1\textwidth{cccccc}
+\hline
+类别 & 个数样本 & p = 1.1 & p = 1.2 & p = 1.3 & p = 1.4 & p = 1.5 & p = 1.6 & p = 1.7 & p = 1.8 & p = 1.9\\
+\hline
+Alfalfa & 46 & 71.43 \\
+Corn-notill & 1428 & 76.05\\
+Corn-mintill & 830 & 72.56\\
+Corn & 237 & 63.08\\
+Grass-pasture & 483 & 80.23\\
+Grass-trees & 730 & 94.82\\
+Grass-pasture-mowed & 28 & 100\\
+Hay-windrowed & 478 & 97.68\\
+Oats & 20 & 50\\
+Soybean-notill & 972 & 82.97\\
+Soybean-mintill & 2455 & 74.80\\
+Soybean-clean & 593 & 65.54\\
+Wheat & 205 & 93.51\\
+Woods & 1265 & 94.73\\
+Buildings-Grass-Trees-Drives & 386 & 71.55\\
+Stone-Steel-Towers & 93 & 94.05\\
+\hline
+平均 & 
+\hline
+\end{tabu}
+\end{table}
+
+
 
 %%%%%%%%%% 参考文献 %%%%%%%%%%
 \begin{thebibliography}{}

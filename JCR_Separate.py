@@ -12,13 +12,13 @@ Alg Author: Kaiyu Lei
         分类图 -- 每一种类别定义一种颜色，将高光谱中每个像素点都用这种对应的颜色画出来
 
 步骤：
-	-- 导入mat数据，使之成为python能够识别的数据
+-- 导入mat数据，使之成为python能够识别的数据
+-- loop
+	-- 按比例选择训练集、开发集和测试集，对该类数据，一般测试集的数量要远远大于测试集，开发集从训练集中按一定比例选择选择
 	-- loop
-	    -- 按比例选择训练集、开发集和测试集，对该类数据，一般测试集的数量要远远大于测试集，开发集从训练集中按一定比例选择选择
-		-- loop
-			-- 选定一个lambda，依次执行JCR1、JCR2、JCR3、JCR4，记录时间分类精确度与时间花费，绘出分类图
-		-- end loop
+	-- 选定一个lambda，依次执行JCR1、JCR2、JCR3、JCR4，记录时间分类精确度与时间花费，绘出分类图
 	-- end loop
+-- end loop
 """
 
 ## 导入的包
@@ -39,11 +39,11 @@ def import_data():
 					data_base['label] -- 高光谱中每个像素的类别
 	'''
 	data_base = {}
-	dataFile1 = raw_input("输入样本文件名：")
+	dataFile1 = input("输入样本文件名：")
 	data1 = scipy.io.loadmat(dataFile1)
 	sample = 0.01 * data1[sorted(data1.keys())[3]]     # 这里的下标可能随着不同文件而不同
 	# print(sample)
-	dataFile2 = raw_input("输入样本标签文件：")
+	dataFile2 = input("输入样本标签文件：")
 	data2 = scipy.io.loadmat(dataFile2)
 	label = data2[sorted(data2.keys())[3]]
 
@@ -62,7 +62,8 @@ def position(data_base):
 	:param data_base: 输入样本数据与类别信息，是一个字典型变量
 	:return: info_position_label，字典型变量，每类样本点在map中的位置
 	'''
-	assert(data_base.keys() == ['sample', 'label'])
+	keys = list(data_base.keys())
+	assert(keys == ['sample', 'label'])
 	assert(len(data_base['sample'].shape) == 3)
 	assert(len(data_base['label'].shape) == 2)
 	assert(data_base['sample'].shape[0] == data_base['label'].shape[0])
@@ -80,9 +81,7 @@ def position(data_base):
 
 ## 按比例选择训练集、开发集和测试集
 def train_select_propatation(data_base, info_position_label, rate1 = 0.3, rate2 = 0.0):
-	'''
-	根据比例选择训练集，每个类别都选取一定比例的样本作为训练集，从训练集中选取一定比例的样本作为dev集，剩余的作为测试集
-	与此同时舍弃背景点
+	"""根据比例选择训练集，每个类别都选取一定比例的样本作为训练集，从训练集中选取一定比例的样本作为dev集，剩余的作为测试集此同时舍弃背景点
 	:param rate1: 选取测试集的比例
 	:param rate2: 选取dev集的比例
 	:param data_base: 样本数据集
@@ -91,7 +90,7 @@ def train_select_propatation(data_base, info_position_label, rate1 = 0.3, rate2 
 						data_set['Train1']: 第1类样本的训练集
 						data_set['Dev1]: 第1类样本的dev集
 						data_set['Test1']: 第1类样本的测试集
-	'''
+	"""
 	# TODO: 增加assert()段
 	data_set = {}
 
@@ -103,35 +102,54 @@ def train_select_propatation(data_base, info_position_label, rate1 = 0.3, rate2 
 		m = len(info_position_label['Position' + str(i + 1)][0])
 
 		data_set['Train' + str(i + 1)] = random.sample(cache_sample, int(rate1*m))
-
 		cache_train = data_set['Train' + str(i + 1)]
+
+		# 加入训练点的位置信息
+		num = 0
+		data_set['Train' + str(i + 1) + 'Position'] = []
+		for train_sample in cache_train:
+			indexInInfoPos = cache_sample.index(train_sample)
+			dp = np.array([info_position_label['Position' + str(i + 1)][0][indexInInfoPos],
+					  info_position_label['Position' + str(i + 1)][1][indexInInfoPos]])
+			data_set['Train' + str(i + 1) + 'Position'].append(dp)
+			num += 1
+		del num
+
 		n = len(data_set['Train' + str(i + 1)])
-
 		if rate2 != 0:
-			data_set['Dev' + str(i + 1)] = random.sample(cache_train, int(rate2*n))
-
+			data_set['Dev' + str(i + 1)] = random.sample(cache_train, int(rate2 * n))
 
 		# 使用列表推导式来得到训练集的index
-		train_num =np.array([h for h in range(m)
-		            for j in range(len(cache_train))
-		                           if cache_train[j] == cache_sample[h]])
-
+		train_num = np.array([h for h in range(m)
+						  for j in range(len(cache_train))
+						  if cache_train[j] == cache_sample[h]])
 		test_num = np.array([k for k in range(m)
-		                     if k not in train_num])
+						 if k not in train_num])
 
 		data_set['Test' + str(i + 1)] = [x for x in cache_sample if cache_sample.index(x) not in train_num]
-		data_set['Train' + str(i + 1) + 'Position'] = train_num
-		data_set['Test' + str(i + 1) + 'Position']= test_num
+		cache_test = data_set['Test' + str(i + 1)]
+		# 加入测试点的位置信息
+		num = 0
+		data_set['Test' + str(i + 1) + 'Position'] = []
+		for test_sample in cache_test:
+			indexInInfoPos = cache_sample.index(test_sample)
+			dp = np.array([info_position_label['Position' + str(i + 1)][0][indexInInfoPos],
+						   info_position_label['Position' + str(i + 1)][1][indexInInfoPos]])
+			data_set['Test' + str(i + 1) + 'Position'].append(dp)
+			num += 1
+			# print(data_base['label'][dp[0]][dp[1]])
+		del num
 
 	return data_set
+	
 
 ## 在原图中增加空间近邻信息
 def nearest_neighbors(map):
-	'''
+	"""
 	对原数据进行处理，加入空间信息
 	:param map: 原高光谱图片，三维矩阵，ndarray数据
 	:return: map_neighbor 滤波处理之后的map，ndarray数据，大小同map相同
-	'''
+	"""
 	[m, n, dim] = map.shape
 	map_neighbor = np.zeros([m, n, dim])
 
@@ -167,13 +185,12 @@ def nearest_neighbors(map):
 
 ## 选择使用的JRC模型
 def model():
-	model = raw_input('请输入使用的方法：')
+	model = input('请输入使用的方法：')
 
 	assert((model == 'JN_Test_Only' or model == 'JN_Test_Train'
 	        or model == 'JR_Terms' or model == 'Smooth_Constraint'))
 
 	return model
-
 
 
 ## 实验模块
@@ -220,7 +237,7 @@ def main():
 	## dev数据集debug
 	# dev(data_base, data_set)
 	## 进行实验
-
+	"""
 	for test_num in range(data_base['label'].min() + 1, data_base['label'].max() + 1):
 
 		# 选择测试集
@@ -260,10 +277,7 @@ def main():
 		# print('over' + str(test_num))		
 		
 	print('Over')
-	
-
-
-
+	"""
 
 # 执行JCR.py
 if __name__ == '__main__':

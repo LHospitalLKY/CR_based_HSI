@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/JCR_Separate.py" line="32" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="041eee0c-f304-4a8f-b434-561c05c3cd60" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lp_norm.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lp_vs_l2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pCRC_Computing.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pJCR_ALL.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pJCR_Computing.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/论文/lp&amp;#27169;.eps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/论文/lp_norm (2).eps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/论文/lp_norm.eps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/论文/lp_norm.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/论文/lp范数示意图.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/论文/p范数的示意图.eps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/论文/thuthesis" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/论文/Article.aux" afterPath="$PROJECT_DIR$/论文/Article.aux" />
-      <change beforePath="$PROJECT_DIR$/论文/Article.log" afterPath="$PROJECT_DIR$/论文/Article.log" />
-      <change beforePath="$PROJECT_DIR$/论文/Article.pdf" afterPath="$PROJECT_DIR$/论文/Article.pdf" />
-      <change beforePath="$PROJECT_DIR$/论文/Article.tex" afterPath="$PROJECT_DIR$/论文/Article.tex" />
-      <change beforePath="$PROJECT_DIR$/论文/Article.tex.bak" afterPath="$PROJECT_DIR$/论文/Article.tex.bak" />
-      <change beforePath="$PROJECT_DIR$/论文/Article.toc" afterPath="$PROJECT_DIR$/论文/Article.toc" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/lhospital.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expResult/pJCR_0.5_1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expResult/pJCR_0.5_1.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expResult/pJCR_0.5_1.3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CR_based_HSI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CR_based_HSI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRC_computing.py" beforeDir="false" afterPath="$PROJECT_DIR$/CRC_computing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JCRC_Computing.py" beforeDir="false" afterPath="$PROJECT_DIR$/JCRC_Computing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JCR_ALL.py" beforeDir="false" afterPath="$PROJECT_DIR$/JCR_ALL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JCR_Separate.py" beforeDir="false" afterPath="$PROJECT_DIR$/JCR_Separate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Residual_of_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Residual_of_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Residual_of_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Residual_of_2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Residual_of_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Residual_of_3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Residual_of_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Residual_of_4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Residual_of_5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Residual_of_5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Residual_of_6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Residual_of_6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/debug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lp_vs_l2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lp_vs_l2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pCRC_Computing.py" beforeDir="false" afterPath="$PROJECT_DIR$/pCRC_Computing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pJCR_ALL.py" beforeDir="false" afterPath="$PROJECT_DIR$/pJCR_ALL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pJCR_Computing.py" beforeDir="false" afterPath="$PROJECT_DIR$/pJCR_Computing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/论文/Article.log" beforeDir="false" afterPath="$PROJECT_DIR$/论文/Article.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/论文/Article.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/论文/Article.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/论文/Article.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/论文/Article.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/论文/Article.tex" beforeDir="false" afterPath="$PROJECT_DIR$/论文/Article.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,57 +44,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file leaf-file-name="JCR_Separate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1501">
-              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-              <folding>
-                <element signature="e#611#624#0" expanded="true" />
-                <element signature="e#761#1323#0" expanded="false" />
-                <element signature="e#1366#1966#0" expanded="false" />
-                <element signature="e#2078#3499#0" expanded="false" />
-                <element signature="e#3546#5506#0" expanded="false" />
-                <element signature="e#5537#5710#0" expanded="false" />
-                <element signature="e#5873#6695#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lp_vs_l2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lp_vs_l2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pCRC_Computing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pCRC_Computing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-366">
-              <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
-              <folding>
-                <element signature="e#23#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JCR_ALL.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JCR_ALL.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JCR_ALL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+            <state relative-caret-position="161">
+              <caret line="172" selection-start-line="172" selection-end-line="172" />
               <folding>
                 <element signature="e#77#91#0" expanded="true" />
-                <element signature="e#244#1413#0" expanded="false" />
-                <element signature="e#244#518#1" expanded="false" />
+                <element signature="e#273#2426#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_0.5.cvs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/expResult/JCR/_0.5.cvs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="debug.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/debug.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,24 +81,23 @@
       <file leaf-file-name="pJCR_ALL.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pJCR_ALL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="89" column="45" lean-forward="false" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+            <state relative-caret-position="1352">
+              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
               <folding>
                 <element signature="e#77#91#0" expanded="true" />
-                <element signature="e#244#1413#0" expanded="false" />
-                <element signature="e#244#518#1" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lp_norm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lp_norm.py">
+      <file leaf-file-name="JCR_Separate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="620">
+              <caret line="82" column="87" selection-start-line="82" selection-start-column="87" selection-end-line="82" selection-end-column="87" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#600#613#0" expanded="true" />
+                <element signature="e#1347#1966#0" />
               </folding>
             </state>
           </provider>
@@ -117,11 +106,10 @@
       <file leaf-file-name="pJCR_Computing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pJCR_Computing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="100" column="37" lean-forward="true" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
+            <state relative-caret-position="589">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="e#59#77#0" expanded="true" />
-                <element signature="e#1319#1340#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -130,16 +118,10 @@
       <file leaf-file-name="JCRC_Computing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JCRC_Computing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="936">
+              <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
               <folding>
                 <element signature="e#42#60#0" expanded="true" />
-                <element signature="e#92#278#1" expanded="false" />
-                <element signature="e#403#1198#0" expanded="false" />
-                <element signature="e#1263#1284#0" expanded="false" />
-                <element signature="e#1316#1541#0" expanded="false" />
-                <element signature="e#1588#1756#0" expanded="false" />
-                <element signature="e#1796#2062#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -148,22 +130,10 @@
       <file leaf-file-name="CRC.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CRC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-379">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="1560">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="e#485#498#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CRC_computing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRC_computing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="54" column="49" lean-forward="true" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
-              <folding>
-                <element signature="e#23#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,19 +154,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CRC_computing.py" />
         <option value="$PROJECT_DIR$/CRC.py" />
         <option value="$PROJECT_DIR$/JCR.py" />
-        <option value="$PROJECT_DIR$/JCR_Separate.py" />
-        <option value="$PROJECT_DIR$/JCRC_Computing.py" />
-        <option value="$PROJECT_DIR$/JCR_ALL.py" />
-        <option value="$PROJECT_DIR$/pJCR_ALL.py" />
         <option value="$PROJECT_DIR$/lp范数绘图.py" />
         <option value="$PROJECT_DIR$/lp_norm.py" />
-        <option value="$PROJECT_DIR$/pJCR_Computing.py" />
         <option value="$PROJECT_DIR$/pCRC_Computin.py" />
-        <option value="$PROJECT_DIR$/pCRC_Computing.py" />
         <option value="$PROJECT_DIR$/lp_vs_l2.py" />
+        <option value="$PROJECT_DIR$/pJCR_Computing.py" />
+        <option value="$PROJECT_DIR$/pCRC_Computing.py" />
+        <option value="$PROJECT_DIR$/CRC_computing.py" />
+        <option value="$PROJECT_DIR$/JCRC_Computing.py" />
+        <option value="$PROJECT_DIR$/pJCR_ALL.py" />
+        <option value="$PROJECT_DIR$/JCR_Separate.py" />
+        <option value="$PROJECT_DIR$/debug.py" />
+        <option value="$PROJECT_DIR$/实验结果/pJCR_0.5_1.3" />
+        <option value="$PROJECT_DIR$/实验结果/pJCR_0.5_1.1" />
+        <option value="$PROJECT_DIR$/实验结果/pJCR_0.5_1.2" />
+        <option value="$PROJECT_DIR$/JCR_ALL.py" />
       </list>
     </option>
   </component>
@@ -209,21 +183,10 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,15 +205,27 @@
               <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="indian" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CR_based_HSI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CR_based_HSI" type="462c0819:PsiDirectoryNode" />
+              <item name="expResult" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CR_based_HSI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CR_based_HSI" type="462c0819:PsiDirectoryNode" />
+              <item name="expResult" type="462c0819:PsiDirectoryNode" />
+              <item name="JCR" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -264,8 +239,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lp_vs_l2">
-    <configuration name="lp范数绘图" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.JCR_ALL">
+    <configuration name="JCRC_Computing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CR_based_HSI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -276,14 +252,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CR_based_HSI" />
-      <option name="SCRIPT_NAME" value="D:\GitBase\CR_based_HSI\lp_norm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JCRC_Computing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="lp_norm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="JCR_ALL" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CR_based_HSI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -294,14 +270,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CR_based_HSI" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lp_norm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JCR_ALL.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="lp_vs_l2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="JCR_Separate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CR_based_HSI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -312,14 +288,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CR_based_HSI" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lp_vs_l2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JCR_Separate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pCRC_Computin" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="debug" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CR_based_HSI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -330,14 +306,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CR_based_HSI" />
-      <option name="SCRIPT_NAME" value="D:\GitBase\CR_based_HSI\pCRC_Computing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/debug.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pJCR_ALL" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pJCR_Computing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CR_based_HSI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -348,53 +324,62 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CR_based_HSI" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pJCR_ALL.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pJCR_Computing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.pJCR_ALL" />
-      <item index="1" class="java.lang.String" itemvalue="Python.lp范数绘图" />
-      <item index="2" class="java.lang.String" itemvalue="Python.lp_norm" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pCRC_Computin" />
-      <item index="4" class="java.lang.String" itemvalue="Python.lp_vs_l2" />
+    <list>
+      <item itemvalue="Python.JCR_Separate" />
+      <item itemvalue="Python.JCRC_Computing" />
+      <item itemvalue="Python.JCR_ALL" />
+      <item itemvalue="Python.debug" />
+      <item itemvalue="Python.pJCR_Computing" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.lp_vs_l2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pCRC_Computin" />
-        <item index="2" class="java.lang.String" itemvalue="Python.lp_norm" />
-        <item index="3" class="java.lang.String" itemvalue="Python.lp范数绘图" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pJCR_ALL" />
+      <list>
+        <item itemvalue="Python.JCR_ALL" />
+        <item itemvalue="Python.pJCR_Computing" />
+        <item itemvalue="Python.debug" />
+        <item itemvalue="Python.JCR_Separate" />
+        <item itemvalue="Python.JCRC_Computing" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="041eee0c-f304-4a8f-b434-561c05c3cd60" name="Default" comment="" />
+      <created>1526006560160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526006560160</updated>
+    </task>
+    <servers />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13217483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36191538" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3964365" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16302083" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39305103" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.12703583" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,6 +413,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pJCR_Computing.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/JCR_ALL.py</url>
+          <line>170</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -435,75 +432,31 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="141" />
+      <option name="time" value="215" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="test_num" />
+        <watch expression="test_l" language="Python" />
+        <watch expression="data_set" />
       </configuration>
     </watches-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>test_l</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CRC_computing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="61" column="61" lean-forward="false" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
-          <folding>
-            <element signature="e#23#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JCR_ALL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#77#91#0" expanded="true" />
-            <element signature="e#244#1413#0" expanded="false" />
-            <element signature="e#244#518#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="191" column="86" lean-forward="false" selection-start-line="191" selection-start-column="86" selection-end-line="191" selection-end-column="86" />
-          <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#485#498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JCRC_Computing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -511,7 +464,7 @@
     <entry file="file://$PROJECT_DIR$/CRC_computing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
-          <caret line="61" column="61" lean-forward="false" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
@@ -521,11 +474,10 @@
     <entry file="file://$PROJECT_DIR$/JCR_ALL.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#77#91#0" expanded="true" />
-            <element signature="e#244#1413#0" expanded="false" />
-            <element signature="e#244#518#1" expanded="false" />
+            <element signature="e#273#2426#0" />
           </folding>
         </state>
       </provider>
@@ -533,23 +485,14 @@
     <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1694">
-          <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-          <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
-          </folding>
+          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CRC.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="e#485#498#0" expanded="true" />
           </folding>
@@ -559,15 +502,9 @@
     <entry file="file://$PROJECT_DIR$/JCRC_Computing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -575,7 +512,7 @@
     <entry file="file://$PROJECT_DIR$/CRC_computing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
-          <caret line="61" column="61" lean-forward="false" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
@@ -585,27 +522,10 @@
     <entry file="file://$PROJECT_DIR$/JCR_ALL.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="12" column="81" lean-forward="false" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+          <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
           <folding>
             <element signature="e#77#91#0" expanded="true" />
-            <element signature="e#244#1413#0" expanded="false" />
-            <element signature="e#244#518#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
+            <element signature="e#273#2426#0" />
           </folding>
         </state>
       </provider>
@@ -616,12 +536,6 @@
           <caret line="94" column="28" lean-forward="true" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -629,7 +543,7 @@
     <entry file="file://$PROJECT_DIR$/CRC_computing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
-          <caret line="61" column="61" lean-forward="false" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
@@ -639,25 +553,9 @@
     <entry file="file://$PROJECT_DIR$/CRC.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="e#485#498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -665,7 +563,7 @@
     <entry file="file://$PROJECT_DIR$/CRC.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5481">
-          <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
           <folding>
             <element signature="e#485#498#0" expanded="true" />
           </folding>
@@ -674,16 +572,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JCRC_Computing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+        <state>
+          <caret selection-end-column="22" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -698,34 +590,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JCRC_Computing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
-          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,31 +603,16 @@
     <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4422">
-          <caret line="205" column="10" lean-forward="false" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
-          <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
-          </folding>
+          <caret line="205" column="10" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JCRC_Computing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2156">
-          <caret line="99" column="34" lean-forward="false" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
+          <caret line="99" column="34" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -766,15 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5427">
           <caret line="205" column="10" lean-forward="true" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
-          <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,12 +630,6 @@
           <caret line="99" column="34" lean-forward="true" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -797,47 +637,16 @@
     <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
-          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
-          </folding>
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JCRC_Computing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
-          <caret line="81" column="30" lean-forward="false" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+          <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -848,12 +657,6 @@
           <caret line="81" column="30" lean-forward="true" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -861,36 +664,28 @@
     <entry file="file://$PROJECT_DIR$/result_of_label1.txt" />
     <entry file="file://$PROJECT_DIR$/Residual_of_4.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6864">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-6864" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Residual_of_7.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-902">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-902" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Residual_of_9.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-572">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-572" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Residual_of_10.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4290">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-4290" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Residual_of_11.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -904,144 +699,170 @@
     <entry file="file://$PROJECT_DIR$/Residual_of_2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="375" column="57" lean-forward="false" selection-start-line="367" selection-start-column="0" selection-end-line="375" selection-end-column="57" />
+          <caret line="375" column="57" selection-start-line="367" selection-end-line="375" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Residual_of_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/numpy/core/_methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/numpy/core/_methods.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
-          <caret line="1667" column="0" lean-forward="false" selection-start-line="1667" selection-start-column="0" selection-end-line="1667" selection-end-column="0" />
+          <caret line="1667" selection-start-line="1667" selection-end-line="1667" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JCR_ALL.py">
+    <entry file="file://$PROJECT_DIR$/lp_norm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+        <state relative-caret-position="364">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lp_vs_l2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRC_computing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="42" />
           <folding>
-            <element signature="e#77#91#0" expanded="true" />
-            <element signature="e#244#1413#0" expanded="false" />
-            <element signature="e#244#518#1" expanded="false" />
+            <element signature="e#23#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictMatrix.cvs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2730" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pCRC_Computing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pJCR_ALL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="89" column="45" lean-forward="false" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+        <state relative-caret-position="1352">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
           <folding>
             <element signature="e#77#91#0" expanded="true" />
-            <element signature="e#244#1413#0" expanded="false" />
-            <element signature="e#244#518#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pJCR_Computing.py">
+    <entry file="file://$PROJECT_DIR$/debug.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="100" column="37" lean-forward="true" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
+        <state relative-caret-position="442">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
           <folding>
-            <element signature="e#59#77#0" expanded="true" />
-            <element signature="e#1319#1340#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRC_computing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="54" column="49" lean-forward="true" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
-          <folding>
-            <element signature="e#23#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JCRC_Computing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-            <element signature="e#92#278#1" expanded="false" />
-            <element signature="e#403#1198#0" expanded="false" />
-            <element signature="e#1263#1284#0" expanded="false" />
-            <element signature="e#1316#1541#0" expanded="false" />
-            <element signature="e#1588#1756#0" expanded="false" />
-            <element signature="e#1796#2062#0" expanded="false" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CRC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-379">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="1560">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="e#485#498#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JCRC_Computing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding>
+            <element signature="e#42#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JCR_Separate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1501">
-          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="620">
+          <caret line="82" column="87" selection-start-line="82" selection-start-column="87" selection-end-line="82" selection-end-column="87" />
           <folding>
-            <element signature="e#611#624#0" expanded="true" />
-            <element signature="e#761#1323#0" expanded="false" />
-            <element signature="e#1366#1966#0" expanded="false" />
-            <element signature="e#2078#3499#0" expanded="false" />
-            <element signature="e#3546#5506#0" expanded="false" />
-            <element signature="e#5537#5710#0" expanded="false" />
-            <element signature="e#5873#6695#0" expanded="false" />
+            <element signature="e#600#613#0" expanded="true" />
+            <element signature="e#1347#1966#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lp_norm.py">
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/numpy/linalg/linalg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="369">
+          <caret line="545" column="14" lean-forward="true" selection-start-line="545" selection-start-column="14" selection-end-line="545" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expResult/pJCR/test.cvs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expResult/pJCR_0.5_1.1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expResult/pJCR_0.5_1.2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expResult/pJCR_0.5_1.3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pJCR_Computing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#59#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pCRC_Computing.py">
+    <entry file="file://$PROJECT_DIR$/expResult/JCR/_0.5.cvs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-366">
-          <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
-          <folding>
-            <element signature="e#23#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="52">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lp_vs_l2.py">
+    <entry file="file://$PROJECT_DIR$/JCR_ALL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="161">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#77#91#0" expanded="true" />
+            <element signature="e#273#2426#0" />
           </folding>
         </state>
       </provider>

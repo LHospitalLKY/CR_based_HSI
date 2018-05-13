@@ -4,8 +4,9 @@
 import _random
 import numpy as np
 from JCR_Separate import *
+from JCR_ALL import *
 from pJCR_Computing import *
-
+"""
 def train_select_constant(data_base, info_position_label, constant = 100):
 	'''
 	Select train set which contains same number of point by this function
@@ -47,13 +48,13 @@ def train_select_constant(data_base, info_position_label, constant = 100):
 			data_set['Test' + str(p)] = [x for x in cache_sample if cache_sample.index(x) not in train_num]
 
 	return data_set, p
-
+"""
 
 def main():
 	data_base = import_data()
 	data_base['sample'] = nearest_neighbors(data_base['sample'])
 	info_position_label = position(data_base)
-	constant = int(raw_input("请输入每一类训练集的个数："))
+	constant = int(input("请输入每一类训练集的个数："))
 	data_set, p = train_select_constant(data_base, info_position_label, constant)
 
 

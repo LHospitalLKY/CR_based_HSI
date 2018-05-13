@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from CRC_computing import *
 from pCRC_Computing import *
 
-
+# 这个文件用于绘制
 
 d = 100
 N = 500
@@ -15,12 +15,12 @@ X = np.random.rand(d, N)
 pCRC = pCRC_Computing(y, X, 0.001, 1.0)
 CRC = CRC_Computing(y, X, 0.001)
 
-print pCRC.alpha
+print(pCRC.alpha)
 print('\n')
-print CRC.alpha
+print(CRC.alpha)
 
-print pCRC.residual
-print CRC.residual
+print(pCRC.residual)
+print(CRC.residual)
 
 fig = plt.figure()
 ax1 = fig.add_subplot(211)

@@ -69,10 +69,10 @@ if __name__ == '__main__':
 	y = np.random.rand(20, 50)   #
 	X = np.random.rand(20, 40)
 
-	print y.shape
-	print X.shape
+	print(y.shape)
+	print(X.shape)
 
 	CRC = CRC_Computing(y, X, 0.1)
 
-	print CRC.alpha
-	print CRC.residual
+	print(CRC.alpha)
+	print(CRC.residual)

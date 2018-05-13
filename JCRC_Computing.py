@@ -32,7 +32,7 @@ class Computing:
 		dim_y = y.shape
 
 		self.__Tikhonov = np.zeros([dim_x[1], dim_x[1]])
-		# self.residual = np.zeros(dim_y[1])
+
 
 		## 计算Tiknonov矩阵
 		if len(dim_y) == 1:   # 如果y是一个向量
@@ -52,7 +52,7 @@ class Computing:
 		else:
 			cache_Re = self.residual
 			for n in range(dim_y[1]):
-				cache_Re[n] = self.Residual(self.y[:, n], self.X, self.alpha[:, n])
+				cache_Re.append(self.Residual(self.y[:, n], self.X, self.alpha[:, n]))
 			self.residual = cache_Re
 
 		# self.print_Ti()
@@ -60,7 +60,7 @@ class Computing:
 
 
 	def print_Ti(self):
-		print self.__Tikhonov
+		print(self.__Tikhonov)
 
 
 	def Tikhonov(self, y, X):
@@ -100,11 +100,11 @@ if __name__ == '__main__':
 	y = np.random.rand(20, 50)   #
 	X = np.random.rand(20, 40)
 
-	print y.shape
-	print X.shape
+	print(y.shape)
+	print(X.shape)
 
 	JRC = Computing(y, X, 0.1)
 
-	print JRC.alpha
-	print JRC.residual
+	print(JRC.alpha)
+	print(JRC.residual)
 

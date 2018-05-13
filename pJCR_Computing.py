@@ -57,7 +57,7 @@ class pJCR_Computing:
 		else:
 			cache_Re = self.residual
 			for n in range(dim_y[1]):
-				cache_Re[n] = self.Residual(self.y[:, n], self.X, self.alpha[:, n])
+				cache_Re.append(self.Residual(self.y[:, n], self.X, self.alpha[:, n]))
 			self.residual = cache_Re
 
 		# self.print_Ti()
@@ -65,7 +65,7 @@ class pJCR_Computing:
 
 
 	def print_Ti(self):
-		print self.__Tikhonov
+		print(self.__Tikhonov)
 
 
 	def Tikhonov(self, y, X):
@@ -126,10 +126,10 @@ if __name__ == '__main__':
 	y = np.random.rand(20, )   #
 	X = np.random.rand(20, 40)
 
-	print y.shape
-	print X.shape
+	print(y.shape)
+	print(X.shape)
 
-	JRC = Computing(y, X, 0.1, 1.1)
+	JRC = pJCR_Computing(y, X, 0.1, 1.1)
 
-	print JRC.alpha
-	print JRC.residual
+	print(JRC.alpha)
+	print(JRC.residual)

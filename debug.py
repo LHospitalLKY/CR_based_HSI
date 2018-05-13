@@ -1,42 +1,34 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+from JCR_Separate import *
 
+Z = np.random.randn(100, 100)
 
-def nearest_neighbors(map):
-	[m, n, dim] = map.shape
-	map_neighbor = np.zeros([m, n, dim])
+# 源数据
+data_base = import_data()
+tmp = data_base['label']
+origMatrix = np.zeros([tmp.shape[0], tmp.shape[1]])
+for i in range(tmp.shape[0]):
+	for j in range(tmp.shape[1]):
+		origMatrix[i][j] = np.float(tmp[i][j])
+origGraph = plt.subplot(121)
+origGraph.imshow(origMatrix, cmap = cm.RdYlGn)
 
-	for i in range(1, m - 1):
-		for j in range(1, n - 1):
-			map_neighbor[i, j] = (map[i - 1, j - 1] + map[i - 1, j] + map[i - 1, j + 1] +
-			                                 map[i, j - 1] + map[i, j] + map[i, j + 1]+
-			                                 map[i + 1, j - 1] + map[i + 1, j] + map[i + 1, j + 1])/9
+# 预测数据
+a = np.loadtxt("/home/lhospital/MyProgramm/CR_based_HSI/predictMatrix.cvs", dtype = np.str, delimiter=",")
 
-	for j in range(1, n - 1):
-		map_neighbor[0, j] = (map[0, j - 1] + map[0, j] + map[0, j + 1] +
-			                                 map[0, j - 1] + map[0, j] + map[0, j + 1]+
-			                                 map[1, j - 1] + map[1, j] + map[1, j + 1])/9
-		map_neighbor[m - 1, j] = (map[m - 2, j - 1] + map[m - 2, j] + map[m - 2, j + 1] +
-			                                 map[m - 1, j - 1] + map[m - 1, j] + map[m - 1, j + 1]+
-			                                 map[m - 1, j - 1] + map[m - 1, j] + map[m - 1, j + 1])/9
+preMatrix = np.zeros([a.shape[0], a.shape[1]])
 
-	for i in range(1, m - 1):
-		map_neighbor[i, 0] = (map[i - 1, 0] + map[i - 1, 0] + map[i - 1, 1] +
-			                                 map[i, 0] + map[i, 0] + map[i, 1]+
-			                                 map[i + 1, 0] + map[i + 1, 0] + map[i + 1, 1])/9
-		map_neighbor[i, n - 1] = (map[i - 1, n - 2] + map[i - 1, n - 1] + map[i - 1, n - 1] +
-			                                 map[i, n - 2] + map[i, n - 1] + map[i, n - 1]+
-			                                 map[i + 1, n - 2] + map[i + 1, n - 1] + map[i + 1, n - 1])/9
+for i in range(a.shape[0]):
+	for j in range(a.shape[1]):
+		preMatrix[i][j] = np.float(a[i][j])
 
-	map_neighbor[0, 0, :] = (2 * (map[0, 1] + map[1, 0] + map[1, 1]) + map[0, 0])/9
-	map_neighbor[0, n - 1, :] = (2 * (map[0, n - 2] + map[1, n - 2] + map[1, n - 1]) + map[0, n - 1])/9
-	map_neighbor[m - 1, 0, :] = (2 * (map[m - 2, 0] + map[m - 2, 1] + map[m - 1, 1]) + map[m - 1, 0])/9
-	map_neighbor[m - 1, n - 1, :] = (2 * (map[m -2 , n - 2] + map[m - 1, n - 2] + map[m - 2, n - 1]) + map[m - 1, n - 1])/9
+preGraph = plt.subplot(122)
+preGraph.imshow(preMatrix, cmap = cm.RdYlGn)
 
-	return map_neighbor
+plt.show()
 
+a = origMatrix == preMatrix
 
-map = np.random.rand(10, 10, 20)
-map_neighbor = np.zeros([10, 10, 20])
-
-nearest_neighbors(map)
-print(nearest_neighbors(map))
+print(a)

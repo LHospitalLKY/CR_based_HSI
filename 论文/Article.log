@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.5.2)  8 MAY 2018 19:27
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.5.2)  12 MAY 2018 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1385,11 +1385,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  21454 strings out of 492998
  425145 string characters out of 6136606
- 500849 words of memory out of 5000000
+ 500844 words of memory out of 5000000
  25235 multiletter control sequences out of 15000+600000
  546867 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
